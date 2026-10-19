@@ -5,11 +5,11 @@ int main(){
     printf("Enter two numbers:\n");
     scanf("%f %f",&a,&b);
     printf("Select operator:\n");
-    printf("1. +\n");
-    printf("2. -\n");
-    printf("3. *\n");
-    printf("4. /\n");
-    printf("5. %%\n");
+    printf("1. Addition (+)\n");
+    printf("2. Subtraction (-)\n");
+    printf("3. Multiplication (*)\n");
+    printf("4. Division (/)\n");
+    printf("5. Modulus (%%)\n");
     scanf("%d",&op);
     if(op==1){
         printf("The result is %.2f",a+b);
@@ -21,7 +21,7 @@ int main(){
         printf("The result is %.2f",a*b);
     }
     else if(op==4){
-        if(a==0 || b==0){
+        if(b==0){
             printf("Invalid operation");
         }
         else{
